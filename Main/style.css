@@ -36,13 +36,14 @@ section {
   margin: 5%;
   list-style: none;
   padding: 0.5%;
-  width: 10em;
+  box-sizing: border-box;
+  max-width: 200px;
 }
 
 .card img {
   padding: 3%;
   height: 100px;
-  max-width: 200px;
+  max-width: 190px;
   border-radius: 5%;
   min-height: 120px;
 }
