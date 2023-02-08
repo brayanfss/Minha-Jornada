@@ -30,13 +30,13 @@ section {
 .card {
   color: var(--bgblack);
   background-color: white;
-  max-width: 10%;
   min-width: min-content;
   border-radius: 20px;
   display: inline-block;
   margin: 5%;
   list-style: none;
-  padding: 1.5%;
+  padding: 0.5%;
+  width: 10em;
 }
 
 .card img {
