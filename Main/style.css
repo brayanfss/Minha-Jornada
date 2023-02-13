@@ -40,6 +40,7 @@ section {
   width: 200px;
   height: 300px;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  animation: load 2s;
 }
 
 .card img {
@@ -48,9 +49,18 @@ section {
   max-width: 190px;
   border-radius: 5%;
   min-height: 120px;
+  transition: transform 2s;
 }
 
-.tag {
+img:hover {
+  transform: scale(2.5);
+  border-radius: 10%;
+}
+
+img::before {
+}
+
+.tag-html {
   background-color: rgb(201, 116, 37);
   max-width: fit-content;
   padding: 0% 1%;
@@ -58,6 +68,20 @@ section {
   margin-right: auto;
   text-align: center;
   border-radius: 20%;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.tag-css {
+  background-color: rgb(8, 116, 167);
+  max-width: fit-content;
+  padding: 0% 1%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 20%;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .desc {
@@ -76,4 +100,27 @@ section {
   font-size: 17px;
   padding: 5% 7%;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.link:hover {
+  background-color: #285291;
+}
+
+tags {
+  display: inline-block;
+}
+
+.in {
+  display: inline-block;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

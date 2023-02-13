@@ -50,6 +50,14 @@ a {
 
 figure {
   text-align: center;
+  margin: 0;
+}
+
+figure img {
+  width: 80%;
+  margin: 0 auto;
+  float: left;
+  border-radius: 5px;
 }
 
 .logo {
